@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/* Modified Poor Man’s Reset
+ * -------------------------------------------------------
+ */
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+/* Utilities
+ * -------------------------------------------------------
+ */
+.visibility-off {
+  visibility: hidden; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform: rotate(0.1deg);
+          transform: rotate(0.1deg); }
+
+/* Variables
+ * -------------------------------------------------------
+ */
+.abs-center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.margin-adjust, #text1, #text2, #text3a, #text3b1, #text3b2, #text3c1, #text3c2, #text3c3, #eftext0, #eftext1, #eftext2, #logo1, #logo2, #legal, #cta {
+  margin: -6px; }
+
+/* Ad content
+ * -------------------------------------------------------
+ */
+#canvas {
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+#ad_content {
+  background: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 600px; }
+  #ad_content div, #ad_content img, #ad_content li {
+    position: absolute; }
+
+#bg {
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 600px;
+  background-color: #dfdfdf; }
+
+#text1 {
+  left: 24px;
+  top: 69px; }
+
+#text2 {
+  left: 52px;
+  top: 145px; }
+
+#text3mask1 {
+  left: 0;
+  top: 225px;
+  width: 300px;
+  height: 30px;
+  overflow: hidden; }
+
+#text3b2 {
+  left: 94px; }
+
+.rule {
+  background-color: #99cc00; }
+
+#rule1 {
+  left: 24px;
+  top: 90px;
+  width: 144px;
+  height: 3px; }
+
+#rule2 {
+  left: 24px;
+  top: 90px;
+  width: 250px;
+  height: 3px; }
+
+#eftext0 {
+  left: 24px;
+  top: 69px; }
+
+#eftext1 {
+  left: 24px;
+  top: 114px; }
+
+#eftext2bg, #glintholder {
+  left: 1px;
+  top: 159px;
+  width: 298px;
+  height: 148px;
+  overflow: hidden; }
+
+#eftext2bg {
+  background-color: black; }
+
+#eftext2 {
+  left: 0;
+  top: 157px; }
+
+#logo1 {
+  left: 53px;
+  top: 250px; }
+
+#logo2 {
+  left: 67px;
+  top: 510px;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85); }
+
+#legal {
+  left: 10px;
+  top: 582px; }
+
+#ctaholder, #ctatextholder {
+  left: 0;
+  top: 450px;
+  width: 300px;
+  height: 60px;
+  overflow: hidden; }
+
+#ctabg {
+  background: #6633cc;
+  left: 5px;
+  top: 5px;
+  width: 290px;
+  height: 50px; }
+
+#glint {
+  left: -170px;
+  top: -20px; }
+
+.glint {
+  background: url("glint.png") no-repeat;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(1, 2);
+          transform: scale(1, 2);
+  width: 170px;
+  height: 100px;
+  opacity: .7; }
+
+.backup {
+  background: url("backup.png") no-repeat;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 600px; }
+
+.sprite-svg {
+	background: url("svgsprite.svg") no-repeat;
+}
+
+.cta {
+	background-position: 0 0;
+	width: 312px;
+	height: 72px;
+}
+
+.ctatext {
+	background-position: 94.08602150537635% 14.006734006734007%;
+	width: 66px;
+	height: 21px;
+}
+
+.eftext1 {
+	background-position: 68.0776783766092% 87.45860927152319%;
+	width: 165.7px;
+	height: 76.4px;
+}
+
+.eftext2 {
+	background-position: 0 99.48717948717947%;
+	width: 312px;
+	height: 162px;
+}
+
+.legal {
+	background-position: 69.02654867256638% 64.07407407407408%;
+	width: 172px;
+	height: 21px;
+}
+
+.logo {
+	background-position: 75.91240875912409% 14.937163375224417%;
+	width: 213px;
+	height: 39.5px;
+}
+
+.text1 {
+	background-position: 66.66666666666667% 98.25819672131148%;
+	width: 156px;
+	height: 25.2px;
+}
+
+.text2 {
+	background-position: 75% 38.84099616858237%;
+	width: 208px;
+	height: 109.2px;
+}
+
+.text3a {
+	background-position: 100% 0;
+	width: 312px;
+	height: 41.6px;
+}
+
+.text3b1 {
+	background-position: 0 41.09985528219971%;
+	width: 312px;
+	height: 41.6px;
+}
+
+.text3c1 {
+	background-position: 0 26.04920405209841%;
+	width: 312px;
+	height: 41.6px;
+}
+
